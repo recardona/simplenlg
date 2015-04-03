@@ -160,15 +160,6 @@ public class NPPhraseSpec extends PhraseElement {
 		return getHead();
 	}
 
-	
-	/**
-	 * setDeterminer - Convenience method for when a person tries to set 
-	 *                 a determiner (e.g. "the") to a NPPhraseSpec.
-	 */
-	public void setDeterminer(Object determiner) {
-		setSpecifier(determiner);
-	}
-	
 	/**
 	 * getDeterminer - Convenience method for when a person tries to get a
 	 *                 determiner (e.g. "the") from a NPPhraseSpec.
