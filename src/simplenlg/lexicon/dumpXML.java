@@ -18,14 +18,6 @@
  */
 package simplenlg.lexicon;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.LineNumberReader;
-
-import java.util.Properties;
-
-import simplenlg.framework.LexicalCategory;
-import simplenlg.framework.WordElement;
 
 // this class reads in a word list, looks up the words in the NIH lexicon,
 // and writes the XML words into an output file
