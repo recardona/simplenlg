@@ -228,7 +228,6 @@ public class Recording {
  * root element instead of putting them inline on each element that uses one of
  * the namespaces.
  */
-@SuppressWarnings("restriction")
 class RecordingNamespacePrefixMapper extends NamespacePrefixMapper {
 
 	@Override
