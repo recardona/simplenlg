@@ -2,3 +2,4 @@
 .classpath
 .project
 /build/classes/
+.settings/org.eclipse.jdt.core.prefs
