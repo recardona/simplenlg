@@ -42,7 +42,11 @@ import simplenlg.xmlrealiser.wrapper.DocumentRealisation;
 import simplenlg.xmlrealiser.wrapper.NLGSpec;
 import simplenlg.xmlrealiser.wrapper.RecordSet;
 
-import com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper;
+
+
+import com.sun.xml.internal.bind.marshaller.*;
+// Originally, the above import was: import com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper;
+// This import, however, accesses an internal class. Eclipse security settings do not allow direct access.
 
 /**
  * A recording is a utility class that holds xml objects for testing the
@@ -224,6 +228,7 @@ public class Recording {
  * root element instead of putting them inline on each element that uses one of
  * the namespaces.
  */
+@SuppressWarnings("restriction")
 class RecordingNamespacePrefixMapper extends NamespacePrefixMapper {
 
 	@Override
